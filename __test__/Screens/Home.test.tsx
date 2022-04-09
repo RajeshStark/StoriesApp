@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react-native";
 import axios, { AxiosResponse } from "axios";
 import { getStories } from "../../src/Services";
 
