@@ -7,7 +7,7 @@ export const getStories = async (count: number | any) : Promise<any> => {
         const url = `${STORY_API}${count}`
         const resp = await axios.get(url)
         if(resp.status !== 200){
-            throw new Error("Something went wrong")
+            throw new Error("Something wrong")
         }
         const data = await resp.data;
         return data;

@@ -3,7 +3,7 @@ import { Searchbar } from 'react-native-paper';
 import { styles } from './styles';
 import { inputTypes } from './types'
 
-export default function CustomSearchbar({ placeholder, onChangeText, value, }: inputTypes) {
+export default function CustomSearchbar({ placeholder, onChangeText, value, testID}: inputTypes) {
 
     return (
         <Searchbar
@@ -12,6 +12,7 @@ export default function CustomSearchbar({ placeholder, onChangeText, value, }: i
             value={value}
             style={styles.inputstyle}
             inputStyle={styles.inputlabelstyle}
+            testID={testID}
         />
     )
 }
